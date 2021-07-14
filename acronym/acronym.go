@@ -5,11 +5,38 @@
 // https://golang.org/doc/effective_go.html#commentary
 package acronym
 
+import (
+	"strings"
+	"unicode"
+)
+
 // Abbreviate should have a comment documenting it.
 func Abbreviate(s string) string {
-	// Write some code here to pass the test suite.
-	// Then remove all the stock comments.
-	// They're here to help you get started but they only clutter a finished solution.
-	// If you leave them in, reviewers may protest!
-	return "You be ready for testing"
+	if len(s) == 0 {
+		return ""
+	}
+
+	s = removePunctuation(s)
+	words := strings.Fields(s)
+	abbreviation := ""
+
+	for i := range words {
+		abbreviation += string(words[i][0])
+
+	}
+
+	return strings.ToUpper(abbreviation)
+}
+
+func removePunctuation(s string) string {
+	returnString := ""
+	s = strings.ReplaceAll(s, "-", " ")
+
+	for _, r := range s {
+		if unicode.IsLetter(r) || unicode.IsSpace(r) {
+			returnString = returnString + string(r)
+		}
+	}
+
+	return returnString
 }

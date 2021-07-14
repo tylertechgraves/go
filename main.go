@@ -7,6 +7,7 @@ import (
 	"github.com/tyler-technologies/exercism/go/acronym"
 	"github.com/tyler-technologies/exercism/go/bob"
 	"github.com/tyler-technologies/exercism/go/gigasecond"
+	greeting "github.com/tyler-technologies/exercism/go/hello-world"
 )
 
 func main() {
@@ -14,5 +15,7 @@ func main() {
 
 	fmt.Println(result)
 	fmt.Println(bob.Hey("You suck!"))
-	fmt.Println(acronym.Abbreviate("Some input"))
+	fmt.Println(acronym.Abbreviate("Complementary metal-oxide semiconductor"))
+
+	fmt.Println(greeting.HelloWorld())
 }
