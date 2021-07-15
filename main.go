@@ -9,6 +9,7 @@ import (
 	"github.com/tyler-technologies/exercism/go/gigasecond"
 	"github.com/tyler-technologies/exercism/go/hamming"
 	greeting "github.com/tyler-technologies/exercism/go/hello-world"
+	"github.com/tyler-technologies/exercism/go/isogram"
 	"github.com/tyler-technologies/exercism/go/raindrops"
 	"github.com/tyler-technologies/exercism/go/scrabble-score"
 	space "github.com/tyler-technologies/exercism/go/space-age"
@@ -42,4 +43,7 @@ func main() {
 
 	// Scrabble-score
 	fmt.Println(scrabble.Score("HonlyBallBearAtol"))
+
+	// Isogram
+	fmt.Println(isogram.IsIsogram("Go Fuck Yourself"))
 }
