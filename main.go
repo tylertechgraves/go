@@ -42,8 +42,8 @@ func main() {
 	fmt.Println(raindrops.Convert(256))
 
 	// Scrabble-score
-	fmt.Println(scrabble.Score("HonlyBallBearAtol"))
+	fmt.Println(scrabble.Score("HonkyBallBearAtol"))
 
 	// Isogram
-	fmt.Println(isogram.IsIsogram("Go Fuck Yourself"))
+	fmt.Println(isogram.IsIsogram("a-b-c d e f g"))
 }
