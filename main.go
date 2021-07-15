@@ -11,6 +11,7 @@ import (
 	greeting "github.com/tyler-technologies/exercism/go/hello-world"
 	"github.com/tyler-technologies/exercism/go/isogram"
 	"github.com/tyler-technologies/exercism/go/raindrops"
+	"github.com/tyler-technologies/exercism/go/reverse-string"
 	"github.com/tyler-technologies/exercism/go/scrabble-score"
 	space "github.com/tyler-technologies/exercism/go/space-age"
 	twofer "github.com/tyler-technologies/exercism/go/two-fer"
@@ -46,4 +47,7 @@ func main() {
 
 	// Isogram
 	fmt.Println(isogram.IsIsogram("a-b-c d e f g"))
+
+	// Reverse string
+	fmt.Println(reverse.Reverse("Snodgrass"))
 }
