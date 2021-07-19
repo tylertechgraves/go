@@ -22,11 +22,11 @@ func SumOfSquares(input int) int {
 	return sum
 }
 
-// Solutions that use algebra instead of iteration:
-// func Difference(input int) int {
-// 	return SquareOfSum(input) - SumOfSquares(input)
-// }
+func Difference(input int) int {
+	return SquareOfSum(input) - SumOfSquares(input)
+}
 
+// Solutions that use algebra instead of iteration:
 // func SquareOfSums(n int) int {
 // 	ret := (n * (n + 1)) / 2
 // 	return ret * ret
