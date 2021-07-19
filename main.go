@@ -6,6 +6,7 @@ import (
 
 	"github.com/tyler-technologies/exercism/go/acronym"
 	"github.com/tyler-technologies/exercism/go/bob"
+	diffsquares "github.com/tyler-technologies/exercism/go/difference-of-squares"
 	"github.com/tyler-technologies/exercism/go/gigasecond"
 	"github.com/tyler-technologies/exercism/go/hamming"
 	greeting "github.com/tyler-technologies/exercism/go/hello-world"
@@ -50,4 +51,9 @@ func main() {
 
 	// Reverse string
 	fmt.Println(reverse.Reverse("Snodgrass"))
+
+	// Difference of Squares
+	fmt.Println(diffsquares.SquareOfSum(2))
+	fmt.Println(diffsquares.SumOfSquares(3))
+	fmt.Println(diffsquares.Difference(10))
 }
