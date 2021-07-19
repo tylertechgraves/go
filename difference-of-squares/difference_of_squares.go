@@ -22,6 +22,20 @@ func SumOfSquares(input int) int {
 	return sum
 }
 
-func Difference(input int) int {
-	return SquareOfSum(input) - SumOfSquares(input)
-}
+// Solutions that use algebra instead of iteration:
+// func Difference(input int) int {
+// 	return SquareOfSum(input) - SumOfSquares(input)
+// }
+
+// func SquareOfSums(n int) int {
+// 	ret := (n * (n + 1)) / 2
+// 	return ret * ret
+// }
+
+// func SumOfSquares(n int) int {
+// 	return (n * (n + 1) * (2*n + 1)) / 6
+// }
+
+// func Difference(n int) int {
+// 	return SquareOfSums(n) - SumOfSquares(n)
+// }
