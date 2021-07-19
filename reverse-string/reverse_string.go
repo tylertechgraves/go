@@ -1,11 +1,12 @@
 package reverse
 
-func Reverse(input string) string {
-	reversedString := ""
+func Reverse(s string) string {
+	runeSlice := []rune(s)
+	var reversedRuneSlice []rune
 
-	for i := len(input) - 1; i >= 0; i-- {
-		reversedString += string(input[i])
+	for i := len(runeSlice) - 1; i > -1; i-- {
+		reversedRuneSlice = append(reversedRuneSlice, runeSlice[i])
 	}
 
-	return reversedString
+	return string(reversedRuneSlice)
 }
