@@ -11,6 +11,7 @@ import (
 	"github.com/tyler-technologies/exercism/go/hamming"
 	greeting "github.com/tyler-technologies/exercism/go/hello-world"
 	"github.com/tyler-technologies/exercism/go/isogram"
+	"github.com/tyler-technologies/exercism/go/luhn"
 	"github.com/tyler-technologies/exercism/go/raindrops"
 	"github.com/tyler-technologies/exercism/go/reverse-string"
 	"github.com/tyler-technologies/exercism/go/scrabble-score"
@@ -56,4 +57,7 @@ func main() {
 	fmt.Println(diffsquares.SquareOfSum(2))
 	fmt.Println(diffsquares.SumOfSquares(3))
 	fmt.Println(diffsquares.Difference(10))
+
+	// Luhn
+	fmt.Println(luhn.Valid("059"))
 }
