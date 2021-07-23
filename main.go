@@ -8,6 +8,7 @@ import (
 	"github.com/tyler-technologies/exercism/go/bob"
 	diffsquares "github.com/tyler-technologies/exercism/go/difference-of-squares"
 	"github.com/tyler-technologies/exercism/go/gigasecond"
+	"github.com/tyler-technologies/exercism/go/grains"
 	"github.com/tyler-technologies/exercism/go/hamming"
 	greeting "github.com/tyler-technologies/exercism/go/hello-world"
 	"github.com/tyler-technologies/exercism/go/isogram"
@@ -60,4 +61,8 @@ func main() {
 
 	// Luhn
 	fmt.Println(luhn.Valid("059"))
+
+	// Grains
+	// fmt.Println(grains.Square(0))
+	fmt.Println(grains.Total())
 }
